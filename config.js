@@ -1,0 +1,16 @@
+const supabaseanon="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhxZXlpcG9lbnB4bWJ2dmdqd2JkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzA0NDEyNDEsImV4cCI6MjA4NjAxNzI0MX0.ONAxiBuWgEtrmdRsG_zMTm-CN0bUUfq3qH39keyyL2E"
+const supabaseurl="https://xqeyipoenpxmbvvgjwbd.supabase.co"
+
+
+const supabase = window.supabase.createClient(supabaseurl, supabaseanon);
+
+document.getElementById("login").addEventListener("click", function() {
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+
+    if (username == 1 && password == 1) {
+        alert("Login Successful");
+    } else {
+        alert("Login Failed");
+    }
+});
